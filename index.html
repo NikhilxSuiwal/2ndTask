@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dosis:wght@500&family=Poppins&family=Ubuntu:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dosis:wght@500&family=Poppins&family=Preahvihear&family=Ubuntu:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        form{
+            background-image: url(img2.jpg);
+            border-radius: 8px;
+            background-color: #741f3e;
+            width: 650px;
+            text-align: center;
+            padding-left:4px ;
+            padding-right:4px ;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-left: 400px;
+
+            
+        }
+        body{
+            background-image: url(img3.jpg);
+        }
+        label{
+            width: 150px;
+            display: inline-block;
+        }
+        h1{
+            text-align: center;
+            background-color: #741f3e;
+            border-radius: 8px;
+            padding-left: 20px;
+            margin-left: 400px;
+            margin-right: 374px;
+            font-family: 'Preahvihear', sans-serif;
+            color: lightpink;
+
+        }
+        .font{
+            font-family: 'Poppins', sans-serif;
+            color: whitesmoke;
+            
+        }
+        .circle{
+            border-radius: 6px;
+        }
+        #sub{
+            background-color: lavender;
+            width: 300px;
+            height: 35px;
+            font-size: medium;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #res{
+            background-color: lavender;
+            width: 300px;
+            height: 35px;
+            font-size: medium;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Create Account</h1>
+    <form>
+    <fieldset style="border-radius: 8px;">
+            <legend class="font">Personal Info</legend>
+        <label for="Name"  class="font">Name</label>
+        <input type="text" id="Name"  class="circle">
+        <br><br>
+        <label for="email" class="font" >Email</label>
+        <input type="email" id="email"  class="circle">
+        <br><br>
+        <label for="number" class="font">Ph. Number</label>
+        <input type="number" id="number" class="circle">
+        <br><br>
+        <label for="pass"  class="font">Password</label>
+        <input type="password" id="pass" class="circle">
+        <br><br>
+        <label for="code"  class="font">Postal Code</label>
+        <input type="zip-code" id="pass" class="circle">
+    </fieldset>
+        <br><br>
+     <fieldset style="border-radius: 8px;"> 
+        <legend class="font">Common</legend> 
+        <label for="gender" class="font">Gender :</label>
+        <input type="radio" name="Male" id="gender" class="circle">Male  <input type="radio" name="Male" id="gender">Female  <input type="radio" name="Male" id="gender">Other 
+        <br><br>
+        <label for="date" class="font">Date & Time :</label>
+        <input type="date" name="datetime" id="date" class="circle">
+        <input type="time" name="" id="date" class="circle">
+        <br><br>
+        <label for="lang" class="font">Language :</label>
+        <select name="Language" id="lang" class="circle">
+            <option value="" hidden disabled selected>Select Your Language</option>
+            <option value="Eng">English</option>
+            <option value="Hin">Hindi</option>
+            <option value="Telg">Telugu</option>
+            <option value="Fre">French</option>
+        </select>
+        <br><br>
+        <label class="font" for="about">About :</label> 
+        <textarea name="Description" id="about" cols="20" rows="1" placeholder="Describe Yourself"></textarea>
+     </fieldset>   
+        <br><br>
+    <fieldset style="border-radius: 6px;">
+       <legend class="font">Docs</legend>
+        <label for="pic" class="font">Upload Profile Picture :</label>
+        <input type="file" id="pic" accept="Picture" class="circle">
+    </fieldset>
+        <br><br>
+        <input type="submit" name="submit" id="sub" class="circle" >
+        <input type="reset" id="res" class="circle">
+    </form>
+</body>
+</html>
